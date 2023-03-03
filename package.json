@@ -1,0 +1,14 @@
+{
+  "name": "gerador_de_senha",
+  "version": "1.0.0",
+  "description": "Criando um gerador de senhas maravilhoso.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elielson Nascimento <nascimento.elielson@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "nanoid": "^4.0.1"
+  }
+}
