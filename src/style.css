@@ -40,6 +40,7 @@ label {
     color: white;
 }
 
+
 #digitInput {
     flex-wrap: wrap;
 }
@@ -75,6 +76,14 @@ label {
     -webkit-box-shadow: 11px 9px 22px -12px rgba(230,230,230,0.78);
     -moz-box-shadow: 11px 9px 22px -12px rgba(230,230,230,0.78);
     box-shadow: 11px 9px 22px -12px rgba(230,230,230,0.78);
+}
+
+footer {
+    background-color: rgba(230,230,230,0.78);
+    color: rgb(1, 0, 83);
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding: 12px 0px 12px 0px;
 }
 
 @media only screen and (max-width: 700px) {
