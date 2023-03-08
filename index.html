@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Fredericka+the+Great&family=Fredoka+One&family=Gruppo&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <title>Gerador de senhas</title>
-</head>
-<body>
-    <h1>Gerador de senhas seguras:</h1>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Gerador de senhas:</h1>
+    </header>
+    
+    <form action="" method="post">
+      <label for="digitInput"> 
+        Número de caracteres:
+        <br>
+        <input
+        type="range"
+        name="digitInput"
+        id="digitInput"
+          min="1"
+          max="36"
+          step="1"
+          />
+        </label>
+        
+        <p id="digitNumberP">0</p>
 
-    <label for="digitInput"> Número de caracteres:
-        <input type="range" name="digitInput" id="digitInput" min="1" max="36" step="1">
-        <p id="digitNumberP"></p>
-    </label>
-    
-    <button type="submit" id="passwordButton">Criar senha</button>
-    
-    <h2 id="passwordH2">...</h2>
-    <script type="module" src="./src/script.js"></script>
-</body>
+        <h2 id="passwordH2">...</h2>
+        
+        <button type="submit" id="passwordButton">Criar senha</button>
+      </form>
+      <script type="module" src="./src/script.js"></script>
+    </body>
 </html>

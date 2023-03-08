@@ -6,10 +6,17 @@ const inputDigit = document.querySelector('#digitInput');
 const paragraphNumberDigit = document.querySelector('#digitNumberP');
 
 setInterval(() => {
-  paragraphNumberDigit.innerHTML = inputDigit.value;
+  if (inputDigit.value < 10) {
+    paragraphNumberDigit.innerHTML = `0${inputDigit.value}`;
+  } else {
+    paragraphNumberDigit.innerHTML = inputDigit.value;
+  } 
+    
 }, 1);
 
-passwordBtn.addEventListener('click', () => {
+passwordBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  
   const { value } = inputDigit;
   
   if (value < 1 || value > 36) {
@@ -18,5 +25,6 @@ passwordBtn.addEventListener('click', () => {
   }
   
   const randomPassword = nanoid(value);
+  
   displayPassword.innerHTML = randomPassword;
 });
