@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import copy from 'clipboard-copy';
 
 const passwordBtn = document.querySelector('#passwordButton');
 const displayPassword = document.querySelector('#passwordH2');
@@ -26,5 +27,8 @@ passwordBtn.addEventListener('click', (e) => {
   
   const randomPassword = nanoid(value);
   
+  copy(randomPassword);
+
   displayPassword.innerHTML = randomPassword;
+  aviso();
 });

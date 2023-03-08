@@ -10,6 +10,7 @@
   "author": "Elielson Nascimento <nascimento.elielson@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "clipboard-copy": "^4.0.1",
     "nanoid": "^4.0.1"
   }
 }
