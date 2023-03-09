@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --open"
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "Elielson Nascimento <nascimento.elielson@gmail.com>",
   "license": "ISC",
