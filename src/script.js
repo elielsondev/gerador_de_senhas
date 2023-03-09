@@ -11,20 +11,14 @@ setInterval(() => {
     paragraphNumberDigit.innerHTML = `0${inputDigit.value}`;
   } else {
     paragraphNumberDigit.innerHTML = inputDigit.value;
-  } 
-    
-}, 1);
+  }   
+}, 100);
 
 passwordBtn.addEventListener('click', (e) => {
   e.preventDefault();
   
   const { value } = inputDigit;
-  
-  if (value < 1 || value > 36) {
-    value = 21;
-    passwordBtn.disabled = true;
-  }
-  
+
   const randomPassword = nanoid(value);
   
   copy(randomPassword);
